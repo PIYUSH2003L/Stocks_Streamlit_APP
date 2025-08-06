@@ -12,7 +12,7 @@ st.title("📈 Nifty Stocks Explorer")
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("../Datasets/Nifty_Stocks.csv")
+    df = pd.read_csv("Nifty_Stocks.csv")
     df['Date'] = pd.to_datetime(df['Date'])  # Ensure proper datetime format
     return df
 
